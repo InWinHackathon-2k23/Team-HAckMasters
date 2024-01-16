@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Plans</title>
+    <link rel="stylesheet" href="/static/css/results_page.css">
+</head>
+
+<body>
+    <div class = "travel_cost">
+        <p>Travel cost : {{travel_cost}}</p>
+    </div>
+    <div class ="remaining_budget">
+        {% if balance > -1 %}
+        <p>Remaining Balance : {{balance_amount}}</p>
+        {% endif %}
+        <p>Your budget is not enough to go on this trip</p>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h2>Tirupati</h2>
+        </div>
+        <div class="box">
+            <h2>{{ train_no_to }}</h2>
+            <div class="small-box">
+                <p>Train , Start Time: {{start_time}}</p>
+            </div>
+        </div>
+        <div class="box">
+            <h2>{{ dest_city }}</h2>
+        </div>
+        <div class="box">
+            <h2>{{ dest_name }}</h2>
+        </div>
+        <div class="box">
+            <h2>{{ train_no_from }}</h2>
+            <div class="small-box">
+                <p>Train , Start Time : {{end_time}}</p>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Tirupati</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

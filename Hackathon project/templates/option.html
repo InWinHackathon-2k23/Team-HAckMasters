@@ -1,0 +1,333 @@
+<!-- /travel_guide/templates/options.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/css/font.css">
+    <title>Options</title>
+</head>
+<body>
+    
+    
+    {% if category == 'Spiritual' %}
+    <header>
+
+    </header>
+        <div class="journey_container1">
+            <div class="section_container1">
+            <h2 class="section_title1">Spiritual</h2>
+                <div class="journey_grid1">
+                        <div class="country_card1">
+                            <img src="/static/images/Tirumala.jpg" alt="Sri Venkateswara Temple" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Sri Venkateshwara Temple') }}" ><span>Sri Venkateswara Temple</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Church.jpg" alt="Velankanni church" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Velankanni Church') }}" ><span>Velankanni Church</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/GoldenTemple.jpg" alt="Golden Temple" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Golden Temple') }}" ><span>Golden Temple</span></a>
+                            
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    {% elif category == 'Natural' %}
+    <header>
+        
+    </header>
+        <div class="journey_container1">
+            <div class="section_container1">
+               <h2 class="section_title1">Nature</h2>
+                <div class="journey_grid1">
+                        <div class="country_card1">
+                            <img src="/static/images/Park1.jpg" alt="Sri Venkateswara Zoological Park" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Sri Venkateswara Zoological Park') }}" ><span>Sri Venkateswara Zoological Park</span></a>
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Beach.jpg" alt="Marina Beach" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Marina Beach') }}" ><span>Marina Beach</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/KapilaTheertham.jpg" alt="Kapilla Theertham" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Kapilaa Theertham') }}"><span>Kapilaa Theertham</span></a>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    {% elif category == 'Shopping' %}
+    <header>
+        
+    </header>
+        <div class="journey_container1">
+            <div class="section_container1">
+               <h2 class="section_title1">Shopping</h2>
+                <div class="journey_grid1">
+                        <div class="country_card1">
+                            <img src="/static/images/Phoenix Marketcity.jpg" alt="Phoenix Marketcity,Chennai" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Phoenix Marketcity') }}"><span>Phoenix Marketcity</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Velocity Mall.jpg" alt="Velocity Mall,Vellore" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Velocity Plaza') }}"><span>Velocity Plaza</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Fountain Mall.jpeg" alt="Fountain Mall,Chennai" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Fountain Mall') }}" ><span>Fountain Mall</span></a>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    {% elif category == 'Monuments' %}
+    <header>
+        
+    </header>
+        <div class="journey_container1">
+            <div class="section_container1">
+               <h2 class="section_title1">Monuments</h2>
+                <div class="journey_grid1">
+                        <div class="country_card1">
+                            <img src="/static/images/Garuda_statue.jpg" alt="Garuda Statue,Tirupati" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Garuda Statue') }}" ><span>Garuda Statue</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Telugu Talli statue.jpg" alt="Telugu Talli Statue,Tirupati" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Telugu Thalli Statue') }}" ><span>Telugu Talli Statue</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Victory War memorial.jpg" alt="Victory War memorial,Chennai" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="{{ url_for('budget', category=category, option='Victory War Memorial') }}" ><span>Victory War memorial</span></a>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <li>No options available for this category</li>
+    {% endif %}
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/css/font.css">
+    <title>Options</title>
+</head>
+<body>
+    
+    
+    {% if category == 'Spiritual' %}
+    <header>
+
+    </header>
+        <div class="journey_container1">
+            <div class="section_container1">
+            <h2 class="section_title1">Spiritual</h2>
+                <div class="journey_grid1">
+                        <div class="country_card1">
+                            <img src="/static/images/Tirumala.jpg" alt="Sri Venkateswara Temple" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="/budget/Spirtual/Sri Venkateswara Temple" target="_blank"><span>Sri Venkateswara Temple</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Church.jpg" alt="Velankanni church" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="/budget/Spirtual/Velankanni Church" target="_blank"><span>Velankanni Church</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/GoldenTemple.jpg" alt="Golden Temple" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="/budget/Spirtual/Golden Temple" target="_blank"><span>Golden Temple</span></a>
+                            
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    {% elif category == 'Natural' %}
+    <header>
+        
+    </header>
+        <div class="journey_container1">
+            <div class="section_container1">
+               <h2 class="section_title1">Nature</h2>
+                <div class="journey_grid1">
+                        <div class="country_card1">
+                            <img src="/static/images/Park1.jpg" alt="Sri Venkateswara Zoological Park" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="empty.html" target="_blank"><span>Sri Venkateswara Zoological Park,Tirupati</span></a>
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Beach.jpg" alt="Marina Beach" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="empty.html" target="_blank"><span>Marina Beach,Chennai</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/KapilaTheertham.jpg" alt="Kapilla Theertham" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="empty.html" target="_blank"><span>Kapila Theertham,Tirupati</span></a>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    {% elif category == 'Shopping' %}
+    <header>
+        
+    </header>
+        <div class="journey_container1">
+            <div class="section_container1">
+               <h2 class="section_title1">Shopping</h2>
+                <div class="journey_grid1">
+                        <div class="country_card1">
+                            <img src="/static/images/Phoenix Marketcity.jpg" alt="Phoenix Marketcity,Chennai" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="empty.html" target="_blank"><span>Phoenix Marketcity,Chennai</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Velocity Mall.jpg" alt="Velocity Mall,Vellore" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="empty.html" target="_blank"><span>Velocity Mall,Vellore</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Fountain Mall.jpeg" alt="Fountain Mall,Chennai" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="empty.html" target="_blank"><span>Fountain Mall,Chennai</span></a>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    {% elif category == 'Monuments' %}
+    <header>
+        
+    </header>
+        <div class="journey_container1">
+            <div class="section_container1">
+               <h2 class="section_title1">Monuments</h2>
+                <div class="journey_grid1">
+                        <div class="country_card1">
+                            <img src="/static/images/Garuda_statue.jpg" alt="Garuda Statue,Tirupati" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="empty.html" target="_blank"><span>Garuda Statue,Tirupati</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Telugu Talli statue.jpg" alt="Telugu Talli Statue,Tirupati" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="empty.html" target="_blank"><span>Telugu Talli Statue,Tirupati</span></a>
+                                
+                            </div>
+                        </div>
+                        <div class="country_card1">
+                            <img src="/static/images/Victory War memorial.jpg" alt="Victory War memorial,Chennai" height="60%">
+                            <div class="country_name1">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <a href="empty.html" target="_blank"><span>Victory War memorial,Chennai</span></a>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <li>No options available for this category</li>
+    {% endif %}
+    
+</body>
+</html>
+
+
+-->

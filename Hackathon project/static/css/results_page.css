@@ -1,0 +1,69 @@
+.start{
+    display: flexbox;
+
+}
+.start_box{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color:white
+}
+
+body{
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.box {
+    width: 10%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+.box:hover {
+    transform: scale(1.05);
+}
+.small-box {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.travel_cost{
+    background-color: white;
+    width:200px;
+    height:50px;
+    border-radius: 15%;
+    text-align: center;
+    padding-top: 7px;
+    color:black;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: inline-block;
+}
+.remaining_budget{
+    background-color: white;
+    width:200px;
+    height:50px;
+    border-radius: 15%;
+    text-align: center;
+    padding-top: 7px;
+    color:rgb(255, 0, 0);
+    margin-top: 0px;
+    margin-left: 800px;
+    display: inline-block;
+
+}

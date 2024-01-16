@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+:root{
+    --primary-color:#669ccb;
+    --primary-color-dark:#5681a7;
+    --secondary-color:#e8f1fa;
+    --text-dark:#282d31;
+    --text-light:#767268;
+    --extra-light:#f3f4f6;
+    --max-width:1200px;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--text-dark)
+}
+a :visited{
+    text-decoration: none;
+    color: var(--text-dark)
+}
+header{
+    height: 100vh;
+    background-image:
+    url(Logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header .section_container1{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: var(--extra-light);
+
+}
+.header_content1 h1{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 5rem;
+}
+.header_content1 p{
+    text-align: center;
+}
+.section_container1{
+    padding:5rem;
+    max-width: var(--max-width);
+    margin: auto;
+}
+.section_title1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+body{
+    font-family: "Roboto",sans-serif;
+}
+img{
+    width: 100%;
+}
+.journey_container1{
+    background-color: var(--secondary-color);
+}
+.journey_grid1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.country_card1{
+    background-color: var(--extra-light);
+}
+.country_name1{
+    padding:1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    cursor: pointer;
+}
+.country_name1 i {
+    font-size: 1.2rem;
+}
+.country_name1 span{
+    font-style: italic;
+}
+.journey_grid1{
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+@media(min-width:640px){
+    header .section_container1{
+        justify-content: flex-start;
+    }
+    .header_content1{
+        max-width: 400px;
+        align-items: flex-start;
+    }
+    .header_content1 p{
+        text-align: left;
+    }
+}
+@media(min-width:700px){
+    .section_container1{
+        justify-content: flex-end;
+    }
+}

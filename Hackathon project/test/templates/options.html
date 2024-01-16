@@ -1,0 +1,43 @@
+<!-- /travel_guide/templates/options.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Options</title>
+</head>
+<body>
+    <h1>Select an Option for {{ category }}</h1>
+    <ul>
+        {% if category == 'Spiritual' %}
+            <li><a href="/budget/Spiritual/Sri Venkateshwara Temple">Sri Venkateshwara Temple</a></li>
+            <li><a href="/budget/Spiritual/Velankanni Church">Velankanni church</a></li>
+            <li><a href="/budget/Spiritual/Golden Temple Vellore">Golden Temple Vellore</a></li>
+            <li><a href="/budget/Spiritual/Ekambareswarar Temple">Ekambareswarar Temple</a></li>
+            <li><a href="/budget/Spiritual/Sri kalahasti temple">Sri kalahsti temple</a></li>
+        {% elif category == 'Natural' %}
+            <li><a href="/budget/Natural/Sri Venkateshwara Zoological Park">Sri Venkateshwara Zoological Park</a></li>
+            <li><a href="/budget/Natural/Arinagar Anna Zoological Park">Arinagar Anna Zoological Park</a></li>
+            <li><a href="/budget/Natural/Mypadu Beach">Mypadu Beach</a></li>
+            <li><a href="/budget/Natural/Marina Beach">Marina Beach</a></li>
+            <li><a href="/budget/Natural/Kapila Theertham Waterfalls">Kapila Theertham Waterfalls</a></li>
+        {% elif category == 'Shopping' %}
+            <li><a href="/budget/Shopping/Phoenix Marketcity">Phoenix Marketcity</a></li>
+            <li><a href="/budget/Shopping/Express Avenue Mall">Express Avenue Mall</a></li>
+            <li><a href="/budget/Shopping/Chennai Citi Center">Chennai Citi Center</a></li>
+            <li><a href="/budget/Shopping/Velocity Mall">Velocity Mall</a></li>
+            <li><a href="/budget/Shopping/Fountain Plaza">Fountain Plaza</a></li>
+        {% elif category == 'Monuments' %}
+            <li><a href="/budget/Monuments/"></a></li>
+            <li><a href="/budget/Monuments/"></a></li>
+            <li><a href="/budget/Monuments/"></a></li>
+            <li><a href="/budget/Monuments/"></a></li>
+            <li><a href="/budget/Monuments/"></a></li>
+        {% else %}
+            <li>No options available for this category</li>
+        {% endif %}
+    </ul>
+</body>
+</html>
